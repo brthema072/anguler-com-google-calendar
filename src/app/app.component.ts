@@ -9,12 +9,17 @@ import { CalendarView } from 'angular-calendar';
 export class AppComponent {
   viewDate: Date = new Date();
   events = [];
-
-  view: CalendarView = CalendarView.Month;
   
   title = 'google-calendar';
 
+  view: CalendarView = CalendarView.Day
+
+  CalendarView = CalendarView;
+
   constructor(){
-    console.log(this.view)
+    console.log(this.CalendarView)
+  }
+  clickDay(day){
+    console.log(day)
   }
 }
